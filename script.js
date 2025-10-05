@@ -23,6 +23,7 @@ async function generateImage() {
         const result = await websim.imageGen({
             prompt: prompt,
             aspect_ratio: aspectRatio,
+            model: "ai-nano-banana",
         });
 
         if (result && result.url) {
@@ -57,4 +58,3 @@ generateBtn.addEventListener('click', generateImage);
 document.addEventListener('DOMContentLoaded', () => {
     generateImage();
 });
-
