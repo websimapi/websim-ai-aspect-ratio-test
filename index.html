@@ -1,0 +1,41 @@
+file changes
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Aspect Ratio Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>AI Aspect Ratio Test</h1>
+        <div class="controls">
+            <label for="prompt">Prompt:</label>
+            <input type="text" id="prompt" value="A tiny banana, nanoscopic, on a microchip">
+            <label for="aspect-ratio">Aspect Ratio:</label>
+            <select id="aspect-ratio">
+                <option value="1:1">1:1 (Square)</option>
+                <option value="16:9">16:9 (Widescreen)</option>
+                <option value="9:16">9:16 (Portrait)</option>
+                <option value="21:9">21:9 (Cinematic)</option>
+                <option value="9:21">9:21 (Cinematic Portrait)</option>
+                <option value="3:2">3:2 (Photography)</option>
+                <option value="2:3">2:3 (Photography Portrait)</option>
+                <option value="4:5">4:5 (Social Media)</option>
+                <option value="5:4">5:4 (Landscape)</option>
+                <option value="3:4">3:4 (Portrait)</option>
+                <option value="4:3">4:3 (Standard)</option>
+            </select>
+            <button id="generate-btn">Generate Image</button>
+        </div>
+        <div id="image-container">
+            <div class="loader" id="loader" style="display: none;"></div>
+            <img id="result-image" src="" alt="Generated Image" style="display: none;">
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
+
